@@ -29,6 +29,13 @@ def webhookProcess():
     if source['type'] == 'user':
         userid = source['userId']
         print(userid)
+    # 判斷訊息是哪一種事件type(follow/message/unfollow...)
+    if data['type'] == 'follow':
+        replyToken = data['replyToken']
+        print(f'userid:{userid} replytoken:{replyToken}')
+        content = '歡迎使用幣圈小工具\n目前功能有:\n1. 查詢USDT/TWD價格 (輸入USDT 不分大小寫)\n2. 查詢主流幣，如BTC,ETH和SOL (輸入BTC or ETH or SOL 不分大小寫)'
+        sendRelpyMseeage(LINE_TOKEN, replyToken, content)
+        return ""
     if data['type'] == 'message':
         replyToken = data['replyToken']
         messageObj = data['message']
