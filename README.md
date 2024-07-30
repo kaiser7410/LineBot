@@ -10,5 +10,8 @@
 - 查詢當下USDT/TWD的價格
 - 查詢幣安BTC, ETH和SOL當下的USDT價格
 
+- 加入好友
+<img src="https://github.com/kaiser7410/LineBot/blob/main/%E6%BC%94%E7%A4%BA1.jpg" width="30%">
 
-
+- 查詢幣價
+<img src="https://github.com/kaiser7410/LineBot/blob/main/%E6%BC%94%E7%A4%BA2.jpg" width="30%">
